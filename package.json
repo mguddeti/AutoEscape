@@ -10,7 +10,9 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:escapesquared.escapesquared"
+		"onCommand:escapesquared.escapesquared",
+		"onCommand:escapesquared.copiedtext",
+		"onCommand:escapesquared.highlightedtext"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -19,7 +21,26 @@
 				"command": "escapesquared.escapesquared",
 				"title": "EscapeSquared"
 			}
-		]
+			,
+			{
+				"command": "escapesquared.copiedtext",
+				"title": "Escape Copied Text"
+			},
+			{
+				"command": "escapesquared.highlightedtext",
+				"title": "Escape Highlighted Text"
+			}
+		],
+		"menus": {
+			"editor/context": [
+			  {
+				"command": "escapesquared.copiedtext"
+			  },
+			  {
+				"command": "escapesquared.highlightedtext"
+			  }
+			]
+		  }
 	},
 	"scripts": {
 		"lint": "eslint .",
