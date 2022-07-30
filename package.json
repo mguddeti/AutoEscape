@@ -1,6 +1,6 @@
 {
-	"name": "escapestring",
-	"displayName": "EscapeString",
+	"name": "autoescape",
+	"displayName": "AutoEscape",
 	"description": "",
 	"version": "0.0.1",
 	"engines": {
@@ -10,40 +10,42 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:escapestring.copiedtext",
-		"onCommand:escapestring.highlightedtext"
+		"onCommand:autoescape.copiedtext",
+		"onCommand:autoescape.highlightedtext"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "escapestring.copiedtext",
+				"command": "autoescape.copiedtext",
 				"title": "Escape Copied Text"
 			},
 			{
-				"command": "escapestring.highlightedtext",
+				"command": "autoescape.highlightedtext",
 				"title": "Escape Highlighted Text"
 			}
 		],
 		"menus": {
 			"editor/context": [
 			  {
-				"command": "escapestring.copiedtext"
+				"command": "autoescape.copiedtext"
 			  },
 			  {
-				"command": "escapestring.highlightedtext"
+				"command": "autoescape.highlightedtext"
 			  }
 			]
 		},
 		"keybindings": [
 			{
-			  "command": "escapestring.copiedtext",
+			  "command": "autoescape.copiedtext",
+			  "description": "Escape Copied Text",
 			  "key": "ctrl+f1",
 			  "mac": "cmd+f1",
 			  "when": "editorTextFocus"
 			},
 			{
-			  "command": "escapestring.highlightedtext",
+			  "command": "autoescape.highlightedtext",
+			  "description": "Escape Highlighted Text",
 			  "key": "ctrl+f2",
 			  "mac": "cmd+f2",
 			  "when": "editorTextFocus"

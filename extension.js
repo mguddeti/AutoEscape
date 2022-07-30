@@ -2,8 +2,8 @@ const vscode = require('vscode');
 const editor = vscode.window.activeTextEditor;
 
 function activate(context) {
-	const copiedText = vscode.commands.registerCommand('escapestring.copiedtext', function () {escapeCopiedText()});
-	const highlightedText = vscode.commands.registerCommand('escapestring.highlightedtext', function () {escapeHighlightedText()});
+	const copiedText = vscode.commands.registerCommand('autoescape.copiedtext', function () {escapeCopiedText()});
+	const highlightedText = vscode.commands.registerCommand('autoescape.highlightedtext', function () {escapeHighlightedText()});
 	context.subscriptions.push(copiedText, highlightedText);
 }
 
