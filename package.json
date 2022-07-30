@@ -1,6 +1,6 @@
 {
-	"name": "escapesquared",
-	"displayName": "EscapeSquared",
+	"name": "escapestring",
+	"displayName": "EscapeString",
 	"description": "",
 	"version": "0.0.1",
 	"engines": {
@@ -10,37 +10,45 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:escapesquared.escapesquared",
-		"onCommand:escapesquared.copiedtext",
-		"onCommand:escapesquared.highlightedtext"
+		"onCommand:escapestring.copiedtext",
+		"onCommand:escapestring.highlightedtext"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "escapesquared.escapesquared",
-				"title": "EscapeSquared"
-			}
-			,
-			{
-				"command": "escapesquared.copiedtext",
+				"command": "escapestring.copiedtext",
 				"title": "Escape Copied Text"
 			},
 			{
-				"command": "escapesquared.highlightedtext",
+				"command": "escapestring.highlightedtext",
 				"title": "Escape Highlighted Text"
 			}
 		],
 		"menus": {
 			"editor/context": [
 			  {
-				"command": "escapesquared.copiedtext"
+				"command": "escapestring.copiedtext"
 			  },
 			  {
-				"command": "escapesquared.highlightedtext"
+				"command": "escapestring.highlightedtext"
 			  }
 			]
-		  }
+		},
+		"keybindings": [
+			{
+			  "command": "escapestring.copiedtext",
+			  "key": "ctrl+f1",
+			  "mac": "cmd+f1",
+			  "when": "editorTextFocus"
+			},
+			{
+			  "command": "escapestring.highlightedtext",
+			  "key": "ctrl+f2",
+			  "mac": "cmd+f2",
+			  "when": "editorTextFocus"
+			}
+		  ]
 	},
 	"scripts": {
 		"lint": "eslint .",

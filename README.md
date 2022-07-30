@@ -1,10 +1,10 @@
-# EscapeSquared
+# EscapeString
 
-EscapeSquared is an extension that allows you to escape special characters when working with strings.
+EscapeString is an extension that allows you to escape special characters when working with strings.
 
 ## Features
 
-EscapeSquared can be applied on strings that have been already pasted in your code or on text that you have copied. This extension can be used for a variety of cases, such as escaping quotes when working with stringified JSON objects to escaping backslashes when pasting file paths.
+EscapeString can be applied on strings that have been already pasted in your code or on text that you have copied. This extension can be used for a variety of cases, such as escaping quotes when working with stringified JSON objects to escaping backslashes when pasting file paths.
 
 <!---
 For example if there is an image subfolder under your extension project workspace:
@@ -31,10 +31,10 @@ This extension contributes the following settings:
 
 ### 1.0.0
 
-Initial release of EscapeSquared
+Initial release of EscapeString
 
 ### For more information
 
-- [Visit the EscapeSquared GitHub Repository](https://github.com/Suhas44/EscapeSquared)
+- [Visit the EscapeString GitHub Repository](https://github.com/Suhas44/EscapeString)
 
 **Enjoy!**
